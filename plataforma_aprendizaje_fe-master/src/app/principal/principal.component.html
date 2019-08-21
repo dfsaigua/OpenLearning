@@ -1,0 +1,150 @@
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Proyecto tutorias en línea</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="!(isHandset$ | async)"
+  >
+    <a href="principal"><mat-toolbar>LOGO</mat-toolbar></a>
+    <mat-nav-list>
+      <a mat-list-item href="login">Log-In</a>
+      <a mat-list-item href="tutorias">Tutorias</a>
+      <a mat-list-item href="cursos">Cursos</a>
+      <a mat-list-item href="conocenos">Conócenos</a>
+      <a mat-list-item href="politicas">Politicas </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <body>
+      <div style="float:right">
+        <!-- <button><span href="/registro" class="glyphicon glyphicon-user"></span> Registrarse</button> -->
+        <button routerLink="/registro" class="btn btn-primary btn-sm">
+          <span class="glyphicon glyphicon-user"></span> Registrar
+        </button>
+      </div>
+      <div class="jumbotron text-center">
+        <h1>Online Tutoring</h1>
+        <p>Los únicos en el Ecuador</p>
+        <form>
+          <div class="input-group">
+            <input
+              type="buscar"
+              class="form-control"
+              size="10"
+              placeholder="Búsqueda"
+              required
+            />
+            <div class="input-group-btn">
+              <button type="button" class="btn btn-success">Buscar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="about" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2>Información</h2>
+            <h4>
+              Las matemáticas siempre han sido una asignatura que podríamos
+              caracterizar con dos adjetivos: fundamentales y difíciles. En
+              nuestro sistema educativo el peso de esta materia es muy elevado y
+              para el desarrollo de las capacidades cognitivas de los más
+              pequeños, para primaria, resulta básica.
+            </h4>
+            <br />
+            <p>
+              Es imprescindible para open learning conseguir que el estudiante
+              desarrolle los conocimientos necesarios para un Bachillerato de
+              ciencias de cualquier modalidad. Por lo que estas asignaturas
+              abren muchas puertas y que nos acompaña en toda la vida académica
+            </p>
+            <br /><button class="btn btn-default btn-lg">
+              Más Información
+            </button>
+          </div>
+          <div class="col-sm-4">
+            <span class="glyphicon glyphicon-signal logo"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid bg-grey">
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="	glyphicon glyphicon-cog logo"></span>
+          </div>
+          <div class="col-sm-8">
+            <h2>Experiencia</h2>
+            <h4>
+              Desde primaria, donde se adquiere la base que sustentará el
+              conocimiento, pasando por secundaria donde se afianzan contenidos
+              fundamentales, y bachillerato donde culmina la fase
+              preuniversitaria, hasta incluso en tu vida universitaria, podemos
+              ayudarte.
+            </h4>
+            <br />
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <div class="inner">
+          <p class="id_small">
+            © El contenido de esta obra es de propiedad intelectual de "Proyecto
+            de Aprendizaje". Todos los derechos reservados.Prohibida su
+            reproducción total,parcial, comunicación pública o distribución sin
+            autorización previa del titular de los derechos
+          </p>
+          <ul class="icons">
+            <li>
+              <a href="#" class="icon fa-twitter"
+                ><span class="label">Twitter</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon fa-facebook"
+                ><span class="label">Facebook</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon fa-instagram"
+                ><span class="label">Instagram</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="icon fa-envelope"
+                ><span class="label">Email</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </body>
+  </mat-sidenav-content>
+</mat-sidenav-container>

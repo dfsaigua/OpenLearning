@@ -1,2 +1,0 @@
-# OpenLearning
-Frontend Open Learning
