@@ -31,7 +31,8 @@ import { StorageServiceModule} from 'angular-webstorage-service';
 import { AlertsService } from 'angular-alert-module';
 import { RegistroService } from './servicios/registro.service';
 import { PerfilService } from './servicios/perfil.service';
-
+import { CursosestudianteComponent } from './cursosestudiante/cursosestudiante.component';
+import { FilerpPipe } from './pipes/filerp.pipe';
 
 const config = {
   apiKey: 'AIzaSyCpqI773ach6MxOcIqRvgDFBVVTvLJW-Ew',
@@ -79,7 +80,8 @@ const appRoutes: Routes = [
     FilterPipe,
     FiltertPipe,
     PlattutoriaComponent,
-   
+    CursosestudianteComponent,
+    FilerpPipe
     
 
 
